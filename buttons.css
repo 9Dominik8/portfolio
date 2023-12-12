@@ -1,0 +1,26 @@
+.btn_ul{
+ position: relative;
+ padding-bottom: 0.2rem;
+ 
+}
+.btn_ul:hover{
+    color: hsl(0, 0%, 90%);
+}
+.btn_ul:hover::after{
+    transform: scale(1,1);
+}
+
+.btn_ul:after{
+    z-index: 1;
+    content: "";
+    position: absolute;
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+}
+.btn_ul::after{
+    transition: 0.3s cubic-bezier(.99,1.32,.39,1.24);
+    transform: scale(0,1);
+}

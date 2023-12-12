@@ -1,0 +1,173 @@
+:root {
+    --flat_gray: hsl(0, 0%, 16%);
+    --base: #242A38;
+    --primary: #F54B64;
+    --secondary: #f78361;
+    --tertiary: #4E586E;
+    --text: #FFFFFF;
+  }
+*{
+    box-sizing: border-box;
+  }
+body{
+    background-color: var(--flat_gray);
+    font-family: Montserrat , sans-serif;
+    margin: 0;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+.shadow_box{
+  box-shadow: 0 0 40px hsla(0, 0%, 0%, 0.527);
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 1s;
+  filter: blur(5px);
+}
+.TD {
+  transform: translateY(100%);
+}
+.TT {
+  transform: translateY(-100%);
+}
+.TL {
+  transform: translatex(-100%);
+}
+.TR {
+  transform: translatex(100%);
+}
+.show {
+  opacity: 1;
+  transform: translate(0,0);
+  filter: blur(0);
+}
+.delay200 {
+  transition-delay: 200ms;
+}
+.delay300 {
+  transition-delay: 300ms;
+}
+.delay400 {
+  transition-delay: 400ms;
+}
+
+
+/* Sections and divs */
+.section_container {
+  margin: 0px auto;
+  z-index: 1;
+}
+.divider {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+.box_container {
+  width: auto;
+  height: 300px;
+  
+}
+
+.roundPic {
+  border-radius: 50%;
+  animation-name: ringAnim;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes ringAnim {
+  0% {
+    outline: 4px solid transparent;
+  }
+
+  100% {
+    outline-offset: 20px;
+    outline: 4px solid var(--text);
+  }
+}
+
+
+
+
+.main_header {
+  z-index: 9998;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  background-color: hsla(221, 17%, 37%, 0.20);
+}
+.nav_container {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+.navigation a {
+  color:var(--text);
+  text-decoration: none;
+  text-align: center;
+}
+.navigation li{
+  float: left;
+  padding: 0 0.5em;
+}
+
+
+
+
+
+
+
+
+
+.mobile_menu {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  background-color: white;
+}
+
+/* Wave divider */
+.wave {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.wb {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+.wt {
+  top: 0;
+}
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(118% + 1.3px);
+  height: 50px;
+}
+
+.wave .shape-fill {
+  fill: #F78361;
+}
