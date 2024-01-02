@@ -24,3 +24,17 @@
     transition: 0.3s cubic-bezier(.99,1.32,.39,1.24);
     transform: scale(0,1);
 }
+
+.btn-rounded {
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+    color: black;
+    padding: 0.5em;
+    border-radius: 1em;
+    transition: 0.3s ease-out;
+}
+.btn-rounded:hover {
+    color: white;
+    transform: scale(1.05);
+}

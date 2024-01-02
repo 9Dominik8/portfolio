@@ -44,11 +44,18 @@
 
 }
 
-@media (min-width: 640px) {
+@media (width <= 1023px) {
   .resp {
       max-width: 100%;
     }
+    .welcome-desktop {
+      display: none;
+    }
+    .roundPic {
+      margin: 0 auto;
+    }
   }
+
   @media (min-width: 1024px) {
   .resp{
     max-width: 1024px;
@@ -56,7 +63,24 @@
   .navigation li{     
       padding: 0 1em;
     }
+  .flex-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    }
+  .welcome {
+    display: none;
   }
+  .desc {
+    display: none;
+  }
+
+  .welcome-desktop {
+    display: block;
+  }
+  }
+
   @media (min-width: 1280px) {
   .resp {
       max-width: 1280px;
