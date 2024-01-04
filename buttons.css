@@ -38,3 +38,13 @@
     color: white;
     transform: scale(1.05);
 }
+.welcome-desktop .btn-rounded {
+    width: 15em;
+    margin: 0 auto;
+}
+.desc .btn-rounded {
+    width: 15em;
+    margin: 0 auto;
+    margin: 3em auto;
+    font-size: 1.1em;    
+}

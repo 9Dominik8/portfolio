@@ -14,6 +14,13 @@ body{
     font-family: Montserrat , sans-serif;
     margin: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
 
 .rounded {
   border-radius: 15px;
@@ -68,17 +75,12 @@ body{
 }
 .box_container {
   width: auto;
-  height: 300px;
-  
+  padding: 0 20px;
 }
 
-.roundPic {
-  border-radius: 50%;
-  animation-name: ringAnim;
-  animation-delay: 2s;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
+
+
+
 
 @keyframes ringAnim {
   0% {
@@ -132,7 +134,6 @@ body{
 
 
 
-
 .mobile_menu {
   display: none;
   cursor: pointer;
@@ -146,6 +147,7 @@ body{
   transition: 0.3s ease-in-out;
   background-color: white;
 }
+
 
 /* Wave divider */
 .wave {
@@ -171,4 +173,34 @@ body{
 
 .wave .shape-fill {
   fill: var(--secondary);
+}
+
+/*Images*/
+.roundPic {
+  border-radius: 50%;
+  animation-name: ringAnim;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.profilePic {
+  background-image: url(media/profile.JPG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 43%;
+}
+.ShowIMG {
+  height: 150px;
+  width:auto;
+  background-color: brown;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+/* gallery interactive*/
+.flexResp {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
 }

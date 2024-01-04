@@ -37,26 +37,30 @@
     backdrop-filter: blur(10px);
   }
   .navigation.active{
-    right: 0%;
-    
+    right: 0%;   
   }
+
 
 
 }
 
 @media (width <= 1023px) {
   .resp {
-      max-width: 100%;
-    }
-    .welcome-desktop {
-      display: none;
-    }
-    .roundPic {
-      margin: 0 auto;
-    }
+    max-width: 100%;
+  }
+  .welcome-desktop {
+    display: none;
+  }
+  .roundPic {
+    margin: 0 auto;
+  }
+  .ShowIMG.large {
+    height: 500px;
   }
 
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
   .resp{
     max-width: 1024px;
     } 
@@ -79,7 +83,23 @@
   .welcome-desktop {
     display: block;
   }
+  .flexResp {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
   }
+  .ShowIMG{
+    width: 150px;
+    height: 500px;
+  }
+  .ShowIMG.large{
+    width: 90% !important;
+  }
+  .ShowIMG:hover{
+    width: 250px;
+    height: 500px;
+  } 
+}
 
   @media (min-width: 1280px) {
   .resp {
