@@ -196,6 +196,7 @@ html{
   background-color: brown;
   border-radius: 50px;
   transition: all 0.4s;
+  cursor: pointer;
 }
 /* gallery interactive*/
 .flexResp {
