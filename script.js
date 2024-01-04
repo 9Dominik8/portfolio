@@ -30,11 +30,11 @@ var collapsible = document.getElementsByClassName("Collapsible")
 for(var i = 0 ; i < collapsible.length ; i++){
     collapsible[i].addEventListener("click", function() {
         var collItems = this.parentNode.firstChild;
-        while (collCurrent) {
+        while (collItems) {
             if (collItems.nodeType === 1 && collItems !== this){
                 collItems.classList.remove("large")
             }
-            collCurrent = collCurrent.nextSibling;
+            collItems = collItems.nextSibling;
         }
         if(this.classList.contains("large")){
             this.classList.remove("large");
