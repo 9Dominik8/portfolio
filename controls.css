@@ -2,12 +2,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text);
     text-align: center;
     padding: 10px 25px;
+    font-weight: 400;
 }
 p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: var(--text);
+    font-weight: 200;
   }
-
+a {
+    font-weight: 100;
+}
 
 .PTB100{
     padding: 100px 0;
@@ -35,4 +39,8 @@ p {
 }
 .PLR10{
     padding: 0 10px;
+}
+
+.text-center {
+    text-align: center;
 }
