@@ -48,3 +48,7 @@ a {
 .max-w-1280 {
     max-width: 1280px;
 }
+
+.d-none {
+    display: none;
+}
