@@ -13,6 +13,8 @@ for(var i = 0 ; i < mItems.length ; i++){
     })
 }
 
+
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
