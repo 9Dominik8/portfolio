@@ -10,9 +10,11 @@
   }
   .mobile_menu.active .bar:nth-child(1){
     transform: translateY(8px) rotate(45deg);
+    background-color: black;
   }
   .mobile_menu.active .bar:nth-child(3){
     transform: translateY(-8px) rotate(-45deg);
+    background-color: black;
   }
   
   .navigation li {
@@ -22,23 +24,23 @@
   .navigation ul {
     margin: 0 auto;
     text-align: center;
+    padding-top: 35%;
   }
   .navigation {
-    padding-top: 15%;
     position: fixed;
     display: flex;
     right: -100%;
     top: 0;
     width: 70%;
-    height: 100svh;
+    min-height: 100vh;
     gap: 15px;
-    background-color: hsla(221, 17%, 37%, 0.20);
+    background-color: var(--base);
+    opacity: 0.99;
     transition: 0.3s;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
   }
+
   .navigation.active{
-    right: 0%;   
+    right: 0%;
   }
 
 

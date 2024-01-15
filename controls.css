@@ -52,3 +52,8 @@ a {
 .d-none {
     display: none;
 }
+
+
+.blur10 {
+    filter: blur(10px);
+}

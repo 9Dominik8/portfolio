@@ -1,15 +1,18 @@
 const hamburger = document.querySelector(".mobile_menu");
 const naviganion = document.querySelector(".navigation");
+const maincont = document.getElementById("main_content");
 var mItems = document.querySelectorAll(".btn_ul");
 
 hamburger.addEventListener("click", () => {
     naviganion.classList.toggle("active");
     hamburger.classList.toggle("active");
+    maincont.classList.toggle("blur10");
 })
 for(var i = 0 ; i < mItems.length ; i++){
     mItems[i].addEventListener("click", () => {
     naviganion.classList.toggle("active");
-    hamburger.classList.toggle("active");    
+    hamburger.classList.toggle("active"); 
+    maincont.classList.toggle("blur10");   
     })
 }
 
