@@ -1,7 +1,7 @@
 .Profile-Pic {
     height: 250px;
     width: 250px;
-    background-image: url("./profile.JPG");
+    background-image: url("profile.JPG");
     background-size: cover;
     background-position: 40% 0;
     border-radius: 50%;
