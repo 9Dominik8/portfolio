@@ -1,14 +1,14 @@
 .dominator-img {
     width: 100%;
     height: 250px;
-    background-image: url("./Dominator.png");
+    background-image: url("../Dominator.png");
     background-size: cover;
     margin-bottom: 15px;
 }
 .registry-img {
     width: 100%;
     height: 500px;
-    background-image: url("./Registry.png");
+    background-image: url("../Registry.png");
     background-size: cover;
     margin-bottom: 15px;
 }
