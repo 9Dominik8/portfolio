@@ -1,0 +1,15 @@
+@media screen and (max-width: 700px) {
+    .projects .projects-cont {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .projects .projects-item {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .projects .projects-item:hover {
+        scale: 1.05;
+    }
+}
